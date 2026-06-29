@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: 'main' # O 'master', asegúrate de que coincida con tu rama principal
+
+# Otorga los permisos necesarios para que GitHub Actions pueda escribir en tu repositorio
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # O la versión que estés usando
+          cache: 'npm'
+
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # La carpeta que genera Vite
+          branch: gh-pages # La rama secundaria donde se guardará el build

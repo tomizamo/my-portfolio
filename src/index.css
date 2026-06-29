@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@theme {
+    --font-display: "Familjen Grotesk", sans-serif;
+    --font-mono: "Geist Mono", monospace;
+    --font-plex: "IBM Plex Sans Condensed", sans-serif;
+}
