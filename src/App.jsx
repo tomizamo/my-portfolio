@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Hero from "./components/Hero";
-import Landing from "./components/Landing";
+import Hero from "./components/Hero.jsx";
+import Landing from "./components/Landing.jsx";
 
 export default function App() {
     // Declaramos el estado de memoria: por defecto empieza en FALSE (apagado)

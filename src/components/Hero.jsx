@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { Suspense } from "react";
-import { Model } from "./Model";
+import { Model } from "./Model.jsx";
 export default function Hero() {
     return (
         // 2. CONTENEDOR DE SECCIÓN: Ocupa el 100% del ancho y alto de pantalla (100vh)
