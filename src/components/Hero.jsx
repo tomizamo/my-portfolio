@@ -9,9 +9,9 @@ export default function Hero() {
 
             {/* 3. COLUMNA IZQUIERDA: Textos e información (5 de 12 columnas) */}
             <div className="col-span-12 lg:col-span-5 flex flex-col justify-center p-8 lg:p-16 z-10">
-                <span className="font-mono text-[#FF5300] text-sm tracking-widest">ESTACIÓN AUDIOVISUAL</span>
+                <span className="font-mono text-[#FF5300] text-sm tracking-widest">ESTACIÓN AUDIO</span>
                 <h1 className="text-4xl lg:text-6xl font-bold text-[#F6F6F4] mt-2 font-sans tracking-tight">
-                    SESSION DECK .01
+                    MIXER-01
                 </h1>
                 <p className="text-[#D2D2C0] mt-6 text-base max-w-md leading-relaxed font-sans">
                     Controlador analógico boutique. Interfaz minimalista inspirada en el funcionalismo industrial.
