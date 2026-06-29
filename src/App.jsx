@@ -3,14 +3,11 @@ import Hero from "./components/Hero.jsx";
 import Landing from "./components/Landing.jsx";
 
 export default function App() {
-    // Declaramos el estado de memoria: por defecto empieza en FALSE (apagado)
-    const [mostrarModelo3D, setMostrarModelo3D] = useState(false);
-
+    const [Mixer_01, setMixer_01] = useState(false);
     return (
         <main className="relative min-h-screen w-full bg-black">
 
-            {/* Renderizado Condicional: SI el estado es falso (!) mostramos la Landing Page */}
-            {!mostrarModelo3D && (
+            {!Mixer_01 && (
                 <div className="relative z-10">
                     <Landing />
 
@@ -27,7 +24,7 @@ export default function App() {
             )}
 
             {/* SI el estado es verdadero, montamos el canvas 3D de tu mixer */}
-            {mostrarModelo3D && (
+            {Mixer_01 && (
                 <div className="relative z-20">
                     <Hero />
 
