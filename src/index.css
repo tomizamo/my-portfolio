@@ -1,6 +1,12 @@
 @import "tailwindcss";
+
 @theme {
-    --font-display: "Familjen Grotesk", sans-serif;
+    /* Fuentes existentes */
+    --font-grotesk: "Familjen Grotesk", sans-serif;
     --font-mono: "Geist Mono", monospace;
     --font-plex: "IBM Plex Sans Condensed", sans-serif;
+
+    /* NUEVAS FUENTES */
+    --font-satoshi: "Satoshi", sans-serif;
+    --font-onest: "Onest", sans-serif;
 }

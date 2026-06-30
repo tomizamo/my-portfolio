@@ -1,11 +1,11 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { Suspense } from "react";
-import { Model } from "./Model.jsx";
-export default function Hero() {
+import { Mixer01Model } from "./Mixer01Model.jsx";
+export default function Mixer01() {
     return (
         // 2. CONTENEDOR DE SECCIÓN: Ocupa el 100% del ancho y alto de pantalla (100vh)
-        <section id="hero" className="w-full h-screen bg-[#0b0b0e] grid grid-cols-12 border-b border-[#D2D2C0]/20">
+        <section id="Mixer01" className="w-full h-screen bg-[#0b0b0e] grid grid-cols-12 border-b border-[#D2D2C0]/20">
 
             {/* 3. COLUMNA IZQUIERDA: Textos e información (5 de 12 columnas) */}
             <div className="col-span-12 lg:col-span-5 flex flex-col justify-center p-8 lg:p-16 z-10">
@@ -36,8 +36,8 @@ export default function Hero() {
                     {/* 4. Modelo escalado */}
                     <Suspense fallback={null}>
                         <group position={[0, 0, 0]} rotation={[0, -Math.PI / 4, 0]} scale={[20, 20, 20]}>
-                            <Model />
-                        </group>
+                            <Mixer01Model />
+                        </group>]
                     </Suspense>
 
                 </Canvas>
